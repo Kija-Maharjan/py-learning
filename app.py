@@ -43,18 +43,18 @@ else:
     print("I see. Thank you for sharing your condition with me.")
 
 #html combined 
-render_template = f"""
-<h1>My name is {name} and I am {age} years old.</h1>
-<p>I am {height}cm tall and I weigh {weight}kg.</p>
-<p>Next year I will be {next_year_age} years old.</p>
-<p>{additional_info}</p>
-<p>My BMI is {bmi}.</p>
-"""
-print(render_template)
+# render_template = f"""
+# <h1>My name is {name} and I am {age} years old.</h1>
+# <p>I am {height}cm tall and I weigh {weight}kg.</p>
+# <p>Next year I will be {next_year_age} years old.</p>
+# <p>{additional_info}</p>
+# <p>My BMI is {bmi}.</p>
+# """
+# print(render_template)
 
-from flask import Flask, render_template 
-app = Flask(__name__)   
-@app.route("/")
-def index():
-    return (render_template)
-app.run(debug=True)
+# from flask import Flask, render_template 
+# app = Flask(__name__)   
+# @app.route("/")
+# def index():
+#     return (render_template)
+# app.run(debug=True)
